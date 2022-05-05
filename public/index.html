@@ -5,13 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
+    <title><%= htmlWebpackPlugin.options.title %></title> 
+		<style>
+			.body {
+				background-color: #111217;
+                background: rgb(140,26,255);
+                background: linear-gradient(to top right,
+                            rgba(17, 18, 23, 1) 0%,
+                            rgba(17, 18, 23, 1) calc(50% - 0.8px),
+                            rgba(140, 26, 255, 1) 50%,
+                            rgba(17, 18, 23, 1) calc(50% + 0.8px),
+                            rgba(17, 18, 23, 1) 100%)
+			}
+		</style>
+	</head>
+  <body class="body">
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    <div id="app" class="app"></div>
     <!-- built files will be auto injected -->
   </body>
 </html>
