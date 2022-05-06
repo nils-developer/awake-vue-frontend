@@ -47,6 +47,7 @@ a {
 .about {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
     margin: 1rem 0;
 }
@@ -54,5 +55,30 @@ a {
 .form-layout {
     display: flex;
     justify-content: center;
+}
+
+@keyframes moveBorder {
+    25% {
+        border-image-source: linear-gradient(to bottom, #8c1aff 50%, #111217 100%);
+    }
+    50% {
+        border-image-source: linear-gradient(to left, #111217 50%, #8c1aff 100%);
+    }
+    75% {
+        border-image-source: linear-gradient(to top, #8c1aff 50%, #111217 100%);
+    }
+    100% {
+        border-image-source: linear-gradient(to right, #111217 50%, #8c1aff 100%);
+    }
+}
+
+@media(max-width: 1200px) {
+    .about {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+
+        align-content: center;
+    }
 }
 </style>

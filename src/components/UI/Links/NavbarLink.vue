@@ -1,5 +1,5 @@
 <template>
-    <a href="{{ link }}">
+    <a href="#">
         <div class="nav-div">
             <h2>{{ label }}</h2>
         </div>
@@ -28,6 +28,7 @@ export default {
     border-radius: 5%;
     border-image-slice: 1;
     border-image-source: linear-gradient(to left, #111217 0%, #8c1aff);
+    background-color: #111217;
 
     padding: .35rem .75rem;
 
@@ -39,9 +40,16 @@ export default {
     border-image-slice: 1;
     border-image-source: linear-gradient(to left, #8c1aff, #111217);
     transform: translateY(-.15rem);
+    animation: moveBorder 3500ms infinite alternate linear;
 }
 
 h2 {
     margin: 0 auto;
+}
+
+@media(max-width: 1200px) {
+    .nav-div {
+        box-shadow: none;
+    }
 }
 </style>

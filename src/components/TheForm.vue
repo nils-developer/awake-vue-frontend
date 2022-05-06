@@ -25,7 +25,7 @@
                 <textarea class="form-input" type="text" id="description" name="description" v-model.trim="description"></textarea>
             </div>
             <div class="form-submit">
-                <form-button label="Absenden"></form-button>
+                <form-button class="button-shadow" label="Absenden"></form-button>
             </div>
         </form>
     </div>
@@ -115,5 +115,23 @@ export default {
 
 .form-submit {
     margin-top: 1.75rem;
+
+    position: relative;
+}
+
+@media(max-width: 1200px) {
+    #description {
+        min-width: 91%;
+        max-width: 91%;
+    }
+
+    .form-content {
+        margin-top: 0;
+        width: 90%;
+    }
+
+    .form-item {
+        width: 65%;
+    }
 }
 </style>

@@ -2,9 +2,9 @@
     <div class="intro-div">
         <div>
             <h2 class="intro-h2">
-                    Interface Designer & 
-                    <br>
-                    Full-Stack Developer
+                Interface Designer & 
+                <br>
+                Full-Stack Developer
             </h2>
         </div>
         <div class="intro-p-div">
@@ -37,14 +37,15 @@ export default {
     background-color: #15171e;
     border-radius: .65rem;
 
-    transition: ease-in-out .25s;
+    transition: ease-in-out .4s;
     transition-delay: 100ms;
 
     padding: 2.5rem 0;
 }
 
 .intro-div:hover {
-    padding: 4rem 0;
+   border-radius: 30%;
+   transform: translateY(-.5rem);
 }
 
 .intro-h2 {
@@ -59,5 +60,38 @@ export default {
 .intro-p {
     color: #898c91;
     line-height: 1.5rem;
+}
+
+@media(max-width: 1200px) {
+    .intro-h2 {
+        font-size: 2.5rem;
+    }
+
+    .intro-div {
+        width: 90%;
+
+        padding: 0;
+
+        margin-bottom: 2rem;
+    }
+
+    .intro-div:hover {
+        border-radius: 5%;
+        transform: translateY(0rem);
+    }
+
+    .intro-p-div {
+        text-align: center;
+    }
+}
+
+@media(max-width: 550px) {
+    .intro-h2 {
+        font-size: 1.2rem;
+    }
+
+    .intro-p {
+        font-size: .65rem;
+    }
 }
 </style>

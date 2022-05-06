@@ -4,7 +4,7 @@
             <a href="https://github.com/nils-developer/nils-developer" target="_blank">
 
                 <div class="projects-div-content">
-                    <h3>Github Profile</h3>
+                    <h3>Github Profil</h3>
                     <p class="projects-p">Das ist mein Github Profil. In diesem Profil findest du Projekte an denen ich gerade arbeite und 
                         Projekte die ich bereits abgeschlossen habe.
                     </p>
@@ -35,7 +35,7 @@ export default {
     display: flex; 
     flex-direction: column;
 
-    max-width: 45%;
+    width: 45%;
 }
 
 .projects-div {
@@ -69,5 +69,17 @@ export default {
 
 .projects-p {
     color: #898c91;
+}
+
+@media(max-width: 1200px) {
+    .projects {
+        width: 90%;
+    }
+}
+
+@media(max-width: 550px) {
+    .projects-p {
+        font-size: .65rem;
+    }
 }
 </style>

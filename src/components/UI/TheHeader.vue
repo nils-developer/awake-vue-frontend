@@ -27,4 +27,18 @@ export default {
     justify-content: space-between;
     align-items: center;
 }
+
+@media (max-width: 1200px) {
+    
+    .header-h1 {
+        margin-left: 0rem;
+    }
+
+    .header-div{
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 2rem;
+    }
+}
 </style>

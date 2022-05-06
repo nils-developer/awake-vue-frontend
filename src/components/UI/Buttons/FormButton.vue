@@ -35,5 +35,11 @@ export default {
     border-image-slice: 1;
     border-image-source: linear-gradient(to left, #8c1aff, #111217);
     transform: translateY(-.15rem);
+    animation: moveBorder 3500ms infinite alternate linear;
+}
+
+.form-button:active {
+    transition: .1s ease-out;
+    transform: translateY(.1rem);
 }
 </style>
